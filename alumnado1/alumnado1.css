@@ -1,0 +1,112 @@
+*{
+  z-index: 101;
+}
+.encabezado {
+  position: fixed;
+  font-family: Arial;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d81010;
+  padding: 0px;
+  text-align: center;
+  z-index: 1000;
+}
+
+body{
+    margin: 0%;
+
+}
+
+header{
+    display: flex;
+    height: 129px;
+    background-color: rgb(212,210,210);
+    justify-content: space-between;
+  
+}
+.logo{
+    display: flex;
+    align-items: center;
+  }
+
+.logo img{
+    z-index: 102;
+    height: 130px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 450px;
+  justify-content: center;
+  padding: 50px;
+  padding-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(212, 210, 210);
+} 
+
+
+form {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 450px;
+  background-color: #d81010;
+  padding: 50px;
+  box-shadow: 0 0 20px rgb(26, 25, 25);
+  
+}
+form {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+ caja{
+  align-items: center;
+  margin-left: 150px;
+ }
+
+
+form h4 {
+  font-size: 35px;
+  margin-bottom: 35px;
+  color: #171617a3;
+}
+
+ input{
+  background-color: rgb(252, 252, 248);
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 25px;
+  color: rgb(18, 18, 19);
+  outline: none;
+  font-size: 16px;
+ }
+ .botons {
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 13, 13);
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+ }
+
+ .botons:hover {
+  background-color: rgba(0, 0, 0, 0.868);
+  color: white;
+ }
+
+
+ .form-registre h2 {
+  margin-bottom: 40px;
+ }
