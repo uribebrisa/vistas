@@ -1,0 +1,31 @@
+async function  cargarbase(){
+    try{
+     const res= await fetch ("http://localhost:3000/base",{
+        method:'POST',
+             headers: {'content-type': 'application/json' },
+             body:json.stringify(datos)
+    
+      });
+     
+     if (!res.ok){
+     throw new Error ("error al cargar los datos");
+     }
+     const base = await res.json();
+     const lista =document.getElementById ("clienteTable");
+     base.forEach(base => {
+        const fila=document.createElement ("tr");
+        fila.innerHTML =`
+        <td> ${boletin.nombre} </td>
+        <td> ${boletin.apellido} </td>
+        <td> ${boletin.curso} </td>
+        <td> ${boletin.dni} </td>
+        `;
+        lista.appendChild(fila);
+     });
+    }
+    catch (error){
+        console.log ("error con el ticket",error);
+    }
+
+}
+cargarbase();
